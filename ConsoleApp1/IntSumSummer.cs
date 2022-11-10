@@ -46,11 +46,12 @@ namespace ConsoleApp1
 
             foreach (var set in sets)
             {
-                if (set.Count > 1)
+                var distinctSet = set.Distinct();
+                if (distinctSet.Count() > 1)
                 {
-                    if (!setSums.Contains(set.Sum()))
+                    if (!setSums.Contains(distinctSet.Sum()))
                     {
-                        setSums.Add(set.Sum());
+                        setSums.Add(distinctSet.Sum());
                     }
                 }
             }
