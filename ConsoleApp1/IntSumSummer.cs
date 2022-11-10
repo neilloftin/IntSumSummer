@@ -8,7 +8,7 @@ namespace ConsoleApp1
 {
     internal class IntSumSummer
     {
-        //method stub inspired from https://stackoverflow.com/a/39342619
+        //method inspired from https://stackoverflow.com/a/39342619
         private static void GetCombinations<T>(List<T> set, List<List<T>> result)
         {
             for (int i = 0; i < set.Count; i++)
